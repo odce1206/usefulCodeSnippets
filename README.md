@@ -6,13 +6,14 @@
 
 _DOM_
 
-
-<input type='text' onkeypress='validate(event)' />
+```html
+<input type="text" onkeypress="validate(event)" />
+```
 
 
 _Script_
 
-
+```javascript
 function validate(evt) {
   var theEvent = evt || window.event;
   var key = theEvent.keyCode || theEvent.which;
@@ -23,3 +24,4 @@ function validate(evt) {
     if(theEvent.preventDefault) theEvent.preventDefault();
   }
 }
+```
